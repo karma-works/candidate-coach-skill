@@ -1,6 +1,6 @@
 ---
 name: candidate-coach-document
-description: Create, tailor, shorten, or review an honest CV, resume, cover letter, candidate positioning, or job-match assessment for the candidate configured in Candidate Coach. Use only when explicitly invoked; build every candidate claim from the configured knowledge base and create an application strategy before drafting application documents.
+description: Create, tailor, shorten, or review an honest CV, resume, cover letter, candidate positioning, or job-match assessment for the candidate configured in Candidate Coach. Use for application-document requests; build every candidate claim from the configured knowledge base, create an application strategy before drafting, and default finished CVs and PDF cover letters to a restrained modern HTML/CSS-to-PDF design.
 metadata:
   short-description: Create evidence-backed candidate application documents
 ---
@@ -30,6 +30,8 @@ Create application materials for the configured candidate without built-in assum
 ## Application strategy before drafting
 
 Before writing or materially updating a CV or cover letter, create or update `application-strategy.md` in the current project. It is a concise working handoff, not a polished application artifact.
+
+Check explicitly whether the file exists before drafting. If it is missing, create it first and tell the user in the next progress update or final handoff that it was created; never silently skip the strategy or imply that an earlier strategy was updated. If it exists, update it when the target role, evidence, or positioning has changed.
 
 1. Read [the interview strategy criteria](references/interview-strategy-summary.md) and use them as strategy criteria, not as candidate evidence.
 2. Base the strategy on the target job description, company context, relevant knowledge-base evidence, search-profile direction, and current application artifacts.
@@ -84,10 +86,13 @@ Group actionable findings as `must-fix`, `should-fix`, and `optional`. Each find
 
 The Markdown source remains the factual base for every visual style.
 
-- Default to a restrained modern CV: clear name/header, compact contact row, readable experience timeline, consistent typography, and compact lower sections. Avoid decorative layouts that reduce scanability or text extraction.
+- For a finished CV or online PDF cover letter, read and follow [the modern HTML/PDF layout contract](references/modern-html-pdf-layout.md). This is the default production path unless the user asks for a different format or an existing project requires another established style.
+- Create the grounded Markdown source, a separate `<basename>.modern.html` rendering source, and a final `<basename>.modern.pdf`. Keep the HTML self-contained and local: inline its CSS, avoid remote fonts and runtime JavaScript, and use semantic text rather than rasterizing document content.
+- Use the restrained modern layout defined in the reference: a large content-sized split-name header, compact contact row, year/content experience timeline, compact technology sections, and balanced two-column lower sections where useful. Apply the same typography, spacing, color, and header system to a one-page cover letter.
+- Treat the PDF as the submission artifact and the HTML as its editable visual source. Do not substitute DOCX for the modern HTML/PDF pair unless the user explicitly requests DOCX.
 - When a conservative academic/ATS PDF is requested, use `scripts/make_cv_pdf_script.py` with the evidence-backed candidate name passed through `--title`.
-- For PDF or DOCX work, use the available document/PDF workflow and its required render-and-verify steps.
-- Render every generated PDF and visually inspect at least the first and final pages. Check name spacing, page breaks, alignment, overlap, missing characters, link validity, and consistent headers.
+- Use an available browser or Chromium print-to-PDF path when possible. A headless office converter is an acceptable fallback, but use converter-friendly HTML structures because it may ignore modern CSS grid. Record the exact fallback only when it materially affects the result.
+- Render every generated PDF to images and visually inspect every page. Check name spacing, page balance, page breaks, alignment, overlap, missing characters, link styling, and consistent headers. Also extract the PDF text and verify that names, dates, punctuation, and URLs survived conversion and remain selectable.
 - If a PDF dependency is unavailable, leave the Markdown and conversion source in place and report the exact limitation.
 
 ## Truthfulness check

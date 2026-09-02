@@ -30,7 +30,7 @@ Candidate Coach combines a private, user-chosen career knowledge base with three
 | Set up your profile | Connects a knowledge-base folder and records your location, target roles, constraints, and preferences | `$candidate-coach-configuration` |
 | Find fitting roles | Searches current openings, verifies the original posting, evaluates evidence and ranks only credible matches | `$candidate-coach` |
 | Assess one opportunity | Separates strong evidence, adjacent experience, and real gaps before giving a fit verdict | `$candidate-coach` |
-| Tailor an application | Builds a positioning strategy, then drafts or refines a CV or cover letter using supported claims only | `$candidate-coach-document` |
+| Tailor an application | Builds a positioning strategy, then creates a restrained modern HTML/CSS CV or cover letter with a submission-ready PDF | `$candidate-coach-document` |
 | Prepare for interviews | Turns the role and your evidence into focused stories, questions, and preparation priorities | `$candidate-coach-document` |
 
 The search entry point was formerly named `candidate-coach-search`; it is now simply `candidate-coach` so the main command is easy to remember.
@@ -94,7 +94,7 @@ $candidate-coach Refresh my previous shortlist and tell me which roles changed o
 ### Create application materials
 
 ```text
-$candidate-coach-document Build a positioning strategy for this role, then tailor my CV without inventing any claims: <job URL>
+$candidate-coach-document Build a positioning strategy for this role, then create a restrained modern HTML/PDF CV without inventing any claims: <job URL>
 
 $candidate-coach-document Draft a concise cover letter grounded in my knowledge base and the role requirements.
 
@@ -118,7 +118,9 @@ candidate-coach-configuration
             └─ creates truthful CVs, cover letters, and interview preparation
 ```
 
-The configuration skill can activate automatically when setup is missing. Search and document creation are explicit-only skills: invoke them with `$candidate-coach` or `$candidate-coach-document`.
+The configuration skill can activate automatically when setup is missing. Application-document requests can activate `candidate-coach-document` automatically; invoke `$candidate-coach-document` when you want to select it explicitly. Role search remains explicit-only through `$candidate-coach`.
+
+Finished CVs and online PDF cover letters default to an evidence-grounded Markdown source, a self-contained modern HTML/CSS rendering source, and a visually verified PDF. DOCX and conservative academic/ATS layouts remain available when explicitly requested.
 
 ## Evidence and safety principles
 
