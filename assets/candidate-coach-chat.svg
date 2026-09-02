@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Candidate Coach simulated conversation</title>
+  <desc id="desc">An illustrative chat in which Candidate Coach verifies and ranks three roles against a configured career profile.</desc>
+  <defs>
+    <linearGradient id="frame" x1="80" y1="20" x2="1120" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111B3A"/>
+      <stop offset="1" stop-color="#17102F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="338" y1="110" x2="1110" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2BAFE1"/>
+      <stop offset="0.5" stop-color="#4264DC"/>
+      <stop offset="1" stop-color="#7743C8"/>
+    </linearGradient>
+    <linearGradient id="avatar" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2FD3C3"/>
+      <stop offset="1" stop-color="#4B65E5"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" opacity="0.09"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#050817" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="24" y="20" width="1152" height="720" rx="34" fill="url(#frame)" filter="url(#shadow)"/>
+  <rect x="24" y="20" width="1152" height="720" rx="34" fill="url(#dots)"/>
+  <path d="M286 20v720" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <path d="M24 88h1152" stroke="#FFFFFF" stroke-opacity="0.1"/>
+
+  <circle cx="62" cy="54" r="7" fill="#FF6B6B"/>
+  <circle cx="86" cy="54" r="7" fill="#F6C85F"/>
+  <circle cx="110" cy="54" r="7" fill="#56D39B"/>
+  <rect x="1000" y="39" width="136" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="1068" y="59" text-anchor="middle" fill="#B9C5E7" font-size="12" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" letter-spacing="1">ILLUSTRATION</text>
+
+  <g transform="translate(54 122)">
+    <rect width="46" height="46" rx="14" fill="url(#avatar)"/>
+    <path d="M12 26c7-2 10-9 16-10 5 0 6 3 11-4" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="12" cy="26" r="3.5" fill="#FFFFFF"/>
+    <path d="m35 7 2.2 5.1 5.1 2.2-5.1 2.2-2.2 5.1-2.2-5.1-5.1-2.2 5.1-2.2L35 7Z" fill="#FFD46B"/>
+  </g>
+  <text x="112" y="141" fill="#F6F8FF" font-size="18" font-weight="750" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">Candidate Coach</text>
+  <text x="112" y="162" fill="#8290B8" font-size="12" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">Your evidence-backed career copilot</text>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <rect x="46" y="202" width="216" height="46" rx="12" fill="#FFFFFF" fill-opacity="0.08"/>
+    <rect x="46" y="202" width="4" height="46" rx="2" fill="#4C72E8"/>
+    <circle cx="72" cy="225" r="7" fill="#5D7DEA"/>
+    <text x="91" y="231" fill="#F4F6FF" font-size="14" font-weight="650">Role search</text>
+    <circle cx="72" cy="278" r="7" fill="none" stroke="#7180A8" stroke-width="2"/>
+    <text x="91" y="284" fill="#9DA8C8" font-size="14">Career profile</text>
+    <path d="M65 326h14v16H65z" fill="none" stroke="#7180A8" stroke-width="2"/>
+    <text x="91" y="339" fill="#9DA8C8" font-size="14">Applications</text>
+    <path d="M65 383h14M72 376v14" stroke="#7180A8" stroke-width="2" stroke-linecap="round"/>
+    <text x="91" y="390" fill="#9DA8C8" font-size="14">Knowledge base</text>
+  </g>
+
+  <text x="330" y="58" fill="#F5F7FF" font-size="18" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">Role search</text>
+  <text x="330" y="78" fill="#7F8DB4" font-size="12" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">Profile configured · sources checked live</text>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <rect x="546" y="116" width="574" height="82" rx="22" fill="url(#accent)"/>
+    <text x="576" y="148" fill="#FFFFFF" font-size="13" font-weight="700" opacity="0.82">YOU</text>
+    <text x="576" y="176" fill="#FFFFFF" font-size="16">Find current AI leadership roles near Zurich that fit my profile.</text>
+
+    <circle cx="354" cy="244" r="22" fill="url(#avatar)"/>
+    <path d="M344 249c6-2 8-7 13-8 4 0 5 2 8-3" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="m363 230 1.5 3.5 3.5 1.5-3.5 1.5-1.5 3.5-1.5-3.5-3.5-1.5 3.5-1.5 1.5-3.5Z" fill="#FFD46B"/>
+    <text x="390" y="240" fill="#F4F6FF" font-size="13" font-weight="750">CANDIDATE COACH</text>
+    <text x="390" y="265" fill="#C6CEE7" font-size="15">I checked the original employer pages and ranked only openings</text>
+    <text x="390" y="287" fill="#C6CEE7" font-size="15">I could verify as live. Three roles passed your evidence filters.</text>
+
+    <rect x="390" y="314" width="730" height="88" rx="16" fill="#FFFFFF" fill-opacity="0.075" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <rect x="410" y="332" width="36" height="36" rx="10" fill="#4B66DF"/>
+    <text x="428" y="356" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="800">1</text>
+    <text x="464" y="342" fill="#F7F8FF" font-size="16" font-weight="700">Head of AI Platform</text>
+    <text x="464" y="369" fill="#9EA9C8" font-size="13">Example Systems · Zurich · Hybrid</text>
+    <rect x="938" y="332" width="154" height="27" rx="13.5" fill="#1FBE91" fill-opacity="0.17"/>
+    <circle cx="957" cy="345.5" r="4" fill="#4BE1B1"/>
+    <text x="970" y="350" fill="#62E7BD" font-size="11" font-weight="750">VERIFIED LIVE</text>
+    <text x="938" y="379" fill="#D6DCF0" font-size="12">Strong evidence · 92% fit</text>
+
+    <rect x="390" y="416" width="730" height="88" rx="16" fill="#FFFFFF" fill-opacity="0.075" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <rect x="410" y="434" width="36" height="36" rx="10" fill="#5966D6"/>
+    <text x="428" y="458" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="800">2</text>
+    <text x="464" y="444" fill="#F7F8FF" font-size="16" font-weight="700">AI Engineering Lead</text>
+    <text x="464" y="471" fill="#9EA9C8" font-size="13">Northstar Labs · Winterthur · Hybrid</text>
+    <rect x="938" y="434" width="154" height="27" rx="13.5" fill="#1FBE91" fill-opacity="0.17"/>
+    <circle cx="957" cy="447.5" r="4" fill="#4BE1B1"/>
+    <text x="970" y="452" fill="#62E7BD" font-size="11" font-weight="750">VERIFIED LIVE</text>
+    <text x="938" y="481" fill="#D6DCF0" font-size="12">Slight stretch · 88% fit</text>
+
+    <rect x="390" y="518" width="730" height="88" rx="16" fill="#FFFFFF" fill-opacity="0.075" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <rect x="410" y="536" width="36" height="36" rx="10" fill="#6856CD"/>
+    <text x="428" y="560" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="800">3</text>
+    <text x="464" y="546" fill="#F7F8FF" font-size="16" font-weight="700">Director, Applied AI</text>
+    <text x="464" y="573" fill="#9EA9C8" font-size="13">Alpine Cloud · Remote in Switzerland</text>
+    <rect x="938" y="536" width="154" height="27" rx="13.5" fill="#1FBE91" fill-opacity="0.17"/>
+    <circle cx="957" cy="549.5" r="4" fill="#4BE1B1"/>
+    <text x="970" y="554" fill="#62E7BD" font-size="11" font-weight="750">VERIFIED LIVE</text>
+    <text x="938" y="583" fill="#D6DCF0" font-size="12">Strong evidence · 84% fit</text>
+
+    <rect x="390" y="624" width="730" height="36" rx="12" fill="#2BC6A2" fill-opacity="0.09"/>
+    <text x="410" y="647" fill="#77DEC5" font-size="12" font-weight="650">3 verified roles · 2 leads moved to watchlist · 0 invented claims</text>
+
+    <rect x="330" y="684" width="790" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="354" y="707" fill="#6F7DA5" font-size="13">Ask for a fit breakdown, CV strategy, or interview plan…</text>
+    <circle cx="1098" cy="702" r="12" fill="#4B66DF"/>
+    <path d="m1093 702 4 4 7-9" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

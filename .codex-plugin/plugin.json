@@ -1,0 +1,41 @@
+{
+  "name": "candidate-coach-skill",
+  "version": "0.1.0",
+  "description": "Evidence-backed job search, application writing, and career knowledge-base skills for Codex.",
+  "author": {
+    "name": "karma.works",
+    "url": "https://github.com/karma-works"
+  },
+  "homepage": "https://github.com/karma-works/candidate-coach-skill",
+  "repository": "https://github.com/karma-works/candidate-coach-skill",
+  "license": "MIT",
+  "keywords": [
+    "career",
+    "job-search",
+    "cv",
+    "cover-letter",
+    "interview"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Candidate Coach",
+    "shortDescription": "Evidence-backed job search and application coaching.",
+    "longDescription": "Configure a private career knowledge base, find and verify suitable roles, and create truthful, tailored application materials with explicit evidence checks.",
+    "developerName": "karma.works",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Documents",
+      "Configuration"
+    ],
+    "websiteURL": "https://github.com/karma-works/candidate-coach-skill",
+    "defaultPrompt": [
+      "Find and rank current roles that fit my profile.",
+      "Tailor my CV for this role without inventing claims.",
+      "Set up my Candidate Coach knowledge base."
+    ],
+    "brandColor": "#3157D5",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg"
+  }
+}

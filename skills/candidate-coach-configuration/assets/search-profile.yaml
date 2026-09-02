@@ -1,0 +1,37 @@
+# Candidate Coach search profile — schema version 1
+# Copy this template to search-profile.yaml in the candidate-coach-configuration
+# skill directory. Keep it separate from the configured knowledge base.
+# It stores candidate-approved search preferences, not evidence for CV claims.
+# Do not include API keys, passwords, access tokens, or unnecessary personal data.
+
+schema_version: 1
+
+# Required. City or municipality is normally precise enough.
+location: ""
+
+# Required. Add one or more role titles or role families in priority order.
+target_roles: []
+
+# Required. Every skill listed here must be supported elsewhere in the knowledge base.
+skills: []
+
+max_commute_minutes: 60
+max_car_distance_km: null
+work_modes:
+  - "Hybrid"
+
+# Allowed: vertical_progression, lateral_movement, more_responsibility, comparable_role
+career_directions: []
+
+# Optional candidate facts and preferences. Leave unknown values empty or null.
+name: ""
+languages: []
+work_authorization: ""
+salary_minimum: null
+currency: null
+must_haves: []
+nice_to_haves: []
+exclusions: []
+preferred_locations: []
+excluded_locations: []
+result_limit: 5

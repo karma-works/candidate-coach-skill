@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Candidate Coach logo</title>
+  <desc id="desc">A speech bubble containing an upward career path and a guiding star.</desc>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="40" x2="446" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#28B8E6"/>
+      <stop offset="0.48" stop-color="#3157D5"/>
+      <stop offset="1" stop-color="#7136C7"/>
+    </linearGradient>
+    <linearGradient id="path" x1="177" y1="305" x2="353" y2="182" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20D9B2"/>
+      <stop offset="1" stop-color="#F7C75B"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#10205B" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#bg)"/>
+  <circle cx="112" cy="112" r="48" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="428" cy="406" r="76" fill="#FFFFFF" opacity="0.06"/>
+  <path d="M137 123c0-26.5 21.5-48 48-48h164c26.5 0 48 21.5 48 48v192c0 26.5-21.5 48-48 48H224l-79 68 14-68h-22c-26.5 0-48-21.5-48-48V171c0-26.5 21.5-48 48-48Z" fill="#FFFFFF" filter="url(#shadow)"/>
+  <path d="M166 300c35-8 55-42 87-45 25-2 37 14 60-12 16-18 22-39 38-62" fill="none" stroke="url(#path)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="166" cy="300" r="17" fill="#1CC7A9" stroke="#FFFFFF" stroke-width="8"/>
+  <circle cx="253" cy="255" r="17" fill="#63CFA5" stroke="#FFFFFF" stroke-width="8"/>
+  <circle cx="314" cy="242" r="17" fill="#D8C66D" stroke="#FFFFFF" stroke-width="8"/>
+  <path d="m360 126 10.8 25.2L396 162l-25.2 10.8L360 198l-10.8-25.2L324 162l25.2-10.8L360 126Z" fill="#F7C75B"/>
+</svg>

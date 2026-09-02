@@ -1,0 +1,6 @@
+interface:
+  display_name: "Candidate Coach Configuration"
+  short_description: "Configure and maintain candidate evidence safely"
+  default_prompt: "Use $candidate-coach-configuration to set up Candidate Coach or update my career knowledge base."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Candidate Coach Document"
+  short_description: "Create honest, evidence-backed application documents"
+  default_prompt: "Use $candidate-coach-document to tailor my CV and cover letter to this role."
+policy:
+  allow_implicit_invocation: false
