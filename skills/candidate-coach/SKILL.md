@@ -1,6 +1,6 @@
 ---
 name: candidate-coach
-description: Find, visually verify, assess, and rank current job openings for the candidate configured in Candidate Coach. Use only when explicitly invoked to search or monitor roles or to evaluate a live job description against the configured evidence and preferences.
+description: Find, visually verify, assess, and rank current job openings for the candidate configured in Candidate Coach. Use when asked to search or monitor roles, recommend matching jobs, or evaluate a live job description against the configured evidence and preferences.
 metadata:
   short-description: Search and verify roles from a configured candidate profile
 ---
@@ -56,19 +56,15 @@ Return no more than `result_limit` roles from the search profile, defaulting to 
 4. substantive role scope;
 5. location, work-mode, and commute confidence.
 
-For each recommendation include:
+Keep the default result concise. For each recommendation include:
 
-| Field | Required content |
-| --- | --- |
-| Rank and role | Employer, exact title, work location, original posting link |
-| Status | `Visually verified live`, check date, and visible application evidence |
-| Commute/work mode | Estimate and cited basis, or the precise uncertainty |
-| Qualification verdict | Fit class, decisive evidence, adjacent evidence, and gaps |
-| Filter decision | Why it passed configured must-haves, exclusions, and seniority checks |
-| Career value | How it supports the configured career direction |
-| Risks | Material missing requirements or ambiguity to clarify before applying |
+- rank, employer, exact title, work location, and original posting link;
+- `Verified live`, the check date, and the visible application evidence;
+- a one-line match verdict grounded in the strongest candidate evidence;
+- a short `Gaps` list that distinguishes adjacent evidence from missing evidence;
+- whether the role passes the configured location, work-mode, commute, seniority, and career-direction filters.
 
-Then give the best one or two next actions and useful questions for the employer. Cite employer postings and current travel sources for factual claims. Never fabricate availability, candidate qualifications, commute duration, salary, or role scope.
+Give more detailed evidence mapping, commute analysis, risks, or employer questions only when useful or requested. Finish with the best one or two next actions. Cite employer postings and current travel sources for factual claims. Never fabricate availability, candidate qualifications, commute duration, salary, or role scope.
 
 ## Monitoring and refreshes
 

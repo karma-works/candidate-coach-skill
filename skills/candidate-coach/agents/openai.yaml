@@ -3,4 +3,4 @@ interface:
   short_description: "Find and verify roles for a configured candidate"
   default_prompt: "Use $candidate-coach to find and rank current roles that fit my configured profile."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true
