@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-3157D5.svg"></a>
-  <img alt="Three bundled skills" src="https://img.shields.io/badge/skills-3-20BFA9.svg">
+  <img alt="Four bundled skills" src="https://img.shields.io/badge/skills-4-20BFA9.svg">
   <img alt="Built for Codex" src="https://img.shields.io/badge/built%20for-Codex-7136C7.svg">
 </p>
 
@@ -60,6 +60,16 @@ Candidate Coach automatically builds a role-specific application strategy, appli
 
 Finished CVs and PDF cover letters use a restrained modern layout by default. Their text and rendered pages are checked for unsupported claims, readability, page breaks, alignment, missing characters, and other visual problems before delivery.
 
+### Practise an interview
+
+```text
+Prepare an interview question catalog for this role, then practise with me.
+```
+
+Candidate Coach Interview uses your configured evidence and the target role to prepare 20–30 questions. By default, it selects a fixed block of eight questions, prioritises previously weak answers, and asks one question at a time. During the block it only records your answers; analysis, evidence checks and coaching follow afterwards. Per-answer coaching is available on request.
+
+Each candidate has a separate local SQLite database inside the installed interview skill's `data/` directory, with separate histories for each position. All attempts and assessment revisions are retained. No candidate records or example answers ship with the skill. Preserve and back up `data/` before updating or reinstalling the skill.
+
 ## How it works
 
 ```mermaid
@@ -72,15 +82,16 @@ flowchart LR
     D --> Q[Top MBA criteria and visual check]
 ```
 
-Candidate Coach includes three cooperating skills:
+Candidate Coach includes four cooperating skills:
 
 | Skill | Purpose |
 | --- | --- |
 | `candidate-coach` | Finds, verifies, assesses, and ranks matching jobs |
-| `candidate-coach-document` | Creates and reviews CVs, cover letters, and interview preparation |
+| `candidate-coach-document` | Creates and reviews CVs, cover letters, and application positioning |
+| `candidate-coach-interview` | Prepares role-specific questions and runs mock interviews with persistent coaching history |
 | `candidate-coach-configuration` | Connects and safely maintains your career knowledge base and search profile |
 
-The skills are selected automatically when your request matches their purpose. You normally do not need to mention a skill name. Explicit invocation with `$candidate-coach`, `$candidate-coach-document`, or `$candidate-coach-configuration` remains available when you want to select one directly.
+The skills are selected automatically when your request matches their purpose. You normally do not need to mention a skill name. Explicit invocation with `$candidate-coach`, `$candidate-coach-document`, `$candidate-coach-interview`, or `$candidate-coach-configuration` remains available when you want to select one directly.
 
 ## Install
 
@@ -102,7 +113,7 @@ mkdir -p ~/.agents/skills
 cp -R candidate-coach-skill/skills/. ~/.agents/skills/
 ```
 
-Codex discovers user skills in `~/.agents/skills`. This repository also includes a plugin manifest so the three skills can be distributed together.
+Codex discovers user skills in `~/.agents/skills`. This repository also includes a plugin manifest so the four skills can be distributed together.
 
 ## First run
 
@@ -157,7 +168,8 @@ candidate-coach-skill/
 └── skills/
     ├── candidate-coach/
     ├── candidate-coach-configuration/
-    └── candidate-coach-document/
+    ├── candidate-coach-document/
+    └── candidate-coach-interview/
 ```
 
 Each skill is self-contained and includes its own `SKILL.md`, optional references, helper scripts, and UI metadata. See the [official OpenAI skill documentation](https://developers.openai.com/codex/skills) for the skill format and invocation behavior.

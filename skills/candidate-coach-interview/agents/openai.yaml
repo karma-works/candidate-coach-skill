@@ -1,0 +1,6 @@
+interface:
+  display_name: "Candidate Coach Interview"
+  short_description: "Practise interviews and learn from previous answers"
+  default_prompt: "Use $candidate-coach-interview to prepare and practise an interview for my target role."
+policy:
+  allow_implicit_invocation: true
